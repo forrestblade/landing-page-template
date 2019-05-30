@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import butter from '../butter-client'
 import {Hero} from './components/hero';
 import { Header } from './components/header';
+import Promotion from './components/promotion';
+import { Packages } from './components/packages';
 
 export class App extends Component {
   state = {
@@ -21,6 +23,8 @@ export class App extends Component {
       <React.Fragment>
         <Header fields={fields} />
         <Hero fields={fields} />
+        <Promotion fields={fields} />
+        <Packages fields={fields} />
       </React.Fragment>
     )
   }
